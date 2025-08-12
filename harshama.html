@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>טופס הרשמה</title>
+  <link rel="stylesheet" href="optionA.CSS">
+  <script defer src="script.js"></script>
+</head>
+
+
+<body class="secondary-page">
+  <section class="department-page">
+    <header>
+      <h1>טופס הרשמה</h1>
+    </header>
+
+    <form id="registrationForm">
+      <label for="fullName">שם מלא: *</label><br>
+      <input type="text" id="fullName" name="fullName">
+      <div class="error-message" id="nameError"></div><br>
+
+      <label for="idNumber">תעודת זהות: *</label><br>
+      <input type="text" id="idNumber" name="idNumber">
+      <div class="error-message" id="idError"></div><br>
+
+      <label for="email">דוא"ל: *</label><br>
+      <input type="email" id="email" name="email">
+      <div class="error-message" id="emailError"></div><br>
+
+      <label for="phone">פלאפון: *</label><br>
+      <input type="tel" id="phone" name="phone">
+      <div class="error-message" id="phoneError"></div><br>
+
+      <label>מגמת לימוד: *</label><br>
+      <input type="radio" name="major" value="אזרחית"> אזרחית<br>
+      <input type="radio" name="major" value="חומרים"> חומרים<br>
+      <input type="radio" name="major" value="תוכנה"> תוכנה<br>
+      <input type="radio" name="major" value="תעשיה וניהול"> תעשיה וניהול<br>
+      <div class="error-message" id="majorError"></div><br>
+
+      <label>
+        <input type="checkbox" id="agree" name="agree">
+        אני מאשר/ת קבלת מידע מהמכללה
+      </label><br><br>
+
+      <label for="currentDate">תאריך מילוי הטופס:</label><br>
+      <input type="text" id="currentDate" name="currentDate" readonly><br><br>
+
+      <label for="notes">הערות:</label><br>
+      <textarea id="notes" name="notes" rows="4" cols="50"></textarea><br><br>
+
+      <input type="submit" value="שלח">
+      <input type="reset" value="איפוס">
+      <button type="button" id="emailButton">שלח לי טופס לדוא"ל</button>
+      <button type="button" id="clearNotes">נקה הערות</button>
+
+      <div id="emailSendSection">
+        <label for="sendEmail">הכנס כתובת מייל לשליחה:</label><br>
+        <input type="email" id="sendEmail" name="sendEmail">
+        <div class="error-message" id="sendEmailError"></div>
+        <button type="button" id="confirmSendEmail">אישור שליחה</button>
+      </div>
+    </form>
+  </section>
+</body>
+</html>

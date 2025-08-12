@@ -1,0 +1,394 @@
+/*  אופציה 1 שדניאל כתב */
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Moonrocks&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to bottom, #ffffff, #ffe5e5);
+    min-height: 100vh;
+    height: 100%;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(135deg, #c62828, #8e0000);
+    color: white;
+    padding: 15px 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+    border-bottom: 5px solid #b71c1c;
+    text-align: center;
+    flex: 1;
+}
+
+.header-item h3 {
+    font-size: 26px;
+    margin: 15px;
+    margin-top: 5px;
+}
+
+.header-item p {
+    font-size: 20px;
+    font-weight: 500;
+    margin: 10px;
+    margin-bottom: 5px;
+}
+
+header .logo{
+    width: 170px;
+    height: auto;
+    transition: transform 0.4s ease;
+    margin-right: 30px;
+}
+
+header img:hover {
+    transform: scale(1.15) rotate(-2deg);
+}
+
+.registration-button {
+    display: inline-block;
+    background: linear-gradient(135deg, #ff5c5c, #ff0000);
+    color: white;
+    padding: 14px 28px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    transition: background-color 0.4s, transform 0.4s, box-shadow 0.4s;
+    margin-left: 40px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.registration-button:hover {
+    background: linear-gradient(135deg, #b71c1c, #8e0000);
+    transform: scale(1.1);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.35);
+}
+
+.menu {
+    width: 18%;
+    background: linear-gradient(to bottom, #d32f2f, #b71c1c);
+    padding: 30px 10px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    box-shadow: inset 0 0 10px rgba(0,0,0,0.3);
+}
+
+.menu a {
+    display: block;
+    width: 100%;
+    padding: 16px 0;
+    margin: 12px 0;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-family: 'Rubik Moonrocks', cursive; 
+    font-size: 22px;
+    border-radius: 12px;
+    background-color: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(5px);
+    transition: all 0.4s ease;
+}
+
+.menu a:hover {
+    background-color: rgba(255, 255, 255, 0.25);
+    transform: scale(1.07);
+}
+
+.container {
+    display: flex;
+    flex: 1;
+    min-height: calc(90vh - 140px);
+}
+
+main {
+    flex: 1;
+    padding: 30px;
+    background: #f7f7f7;
+
+}
+
+iframe {
+    width: 100%;
+    border: 3px solid #cccccc;
+    border-radius: 15px;
+    background-color: white;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    transition: transform 0.4s;
+    height: 100%;
+}
+
+iframe:hover {
+    transform: scale(1.01);
+}
+
+footer {
+    text-align: center;
+    padding: 8px;
+    background: linear-gradient(135deg, #c62828, #8e0000);
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    border-top: 5px solid #b71c1c;
+}
+
+
+/* עיצוב לדפים משניים */
+
+.secondary-page {
+    padding: 30px;
+    background: linear-gradient(to bottom right, #ffffff, #ffe5e5);
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.secondary-page header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+
+
+.secondary-page header h1 {
+    font-size: 36px;
+    color:white;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+    margin: 0 auto; 
+    }
+    
+
+
+.department-director {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background: #ffe5e5;
+    border: 2px solid #c62828;
+    padding: 20px;
+    border-radius: 15px;
+    margin-bottom: 40px;
+    box-shadow: inset 0 0 10px rgba(0,0,0,0.1);
+}
+
+.director-image {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 10px auto;
+    display: block;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.director-info {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+}
+
+.director-info h2 {
+    font-size: 28px;
+    color: #8e0000;
+    margin-bottom: 10px;
+}
+
+.director-info p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.content {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.content h2 {
+    font-size: 30px;
+    color: #8e0000;
+    margin-bottom: 20px;
+}
+
+.content p {
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    color: #333333;
+}
+
+.content h3 {
+    font-size: 24px;
+    color: #b71c1c;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.content ul {
+    list-style-type: square;
+    padding-right: 20px;
+    margin-bottom: 20px;
+}
+
+.content li {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.content .note {
+    font-size: 16px;
+    color: red;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+
+
+.video-container {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto 40px auto;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+    background-color: #ffffff;
+}
+
+.video-container iframe {
+    width: 100%;
+    height: 450px;
+    border: none;
+}
+
+
+
+
+
+
+/* --- שדרוג עיצוב טופס ההרשמה --- */
+
+#registrationForm {
+  max-width: 700px;
+  margin: auto;
+  background: #fff5f5;
+  padding: 30px 40px;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  font-size: 18px;
+}
+
+#registrationForm label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+  color: #8e0000;
+}
+
+#registrationForm input[type="text"],
+#registrationForm input[type="email"],
+#registrationForm input[type="tel"],
+#registrationForm textarea {
+  width: 100%;
+  padding: 10px 12px;
+  margin-bottom: 10px;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+#registrationForm input:focus,
+#registrationForm textarea:focus {
+  border-color: #c62828;
+  outline: none;
+}
+
+#registrationForm input[type="radio"] {
+  margin-left: 8px;
+}
+
+#registrationForm input[type="checkbox"] {
+  margin-left: 5px;
+}
+
+#registrationForm .error-message {
+  color: #d32f2f;
+  font-size: 0.85em;
+  margin-top: -5px;
+  margin-bottom: 10px;
+}
+
+#registrationForm button,
+#registrationForm input[type="submit"],
+#registrationForm input[type="reset"] {
+  background: linear-gradient(135deg, #ff5c5c, #b71c1c);
+  color: white;
+  padding: 10px 20px;
+  margin: 8px 5px;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+#registrationForm button:hover,
+#registrationForm input[type="submit"]:hover,
+#registrationForm input[type="reset"]:hover {
+  background: linear-gradient(135deg, #b71c1c, #8e0000);
+  transform: scale(1.05);
+}
+
+#emailSendSection {
+  background-color: #fff0f0;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.05);
+  display: none;
+  margin-top: 10px;
+}
+
+#sendEmail {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+
+/* אפקט חזותי מותאם אישית לקישורים בתפריט בדף הבית */
+.custom-hover-effect {
+  background-color: #ffe0e0 !important;
+  transform: scale(1.1) !important;
+  box-shadow: 0 0 12px rgba(255, 255, 255, 0.5);
+  transition: all 0.3s ease-in-out !important;
+}
+
+
+.page-shake {
+  animation: shake 0.4s infinite;
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+
+
